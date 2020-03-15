@@ -6,12 +6,18 @@
 ;; --------
 ;; State
 
+(def no-sleep (js/NoSleep.))
+
 (defonce selected (r/atom nil))
 
 (def card-values (map str [0 (char 0x00BD) 1 2 3 5 8 13 20 40 100 \? (char 0x221E)]))
 
 (defn select-card! [v]
+  (if v
+    (.enable no-sleep)
+    (.disable no-sleep))
   (reset! selected v))
+
 
 ;; -------------------------
 ;; Views
