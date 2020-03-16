@@ -2,6 +2,7 @@ body {
   font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
   color: #333;
   width: 98vw;
   text-align: center;
