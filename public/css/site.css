@@ -25,11 +25,17 @@ body {
 }
 
 .big.card {
-    font-size: 40vmin;
+    font-size: 60vmin;
     width: 90vw;
-    height:50vh;
-    padding-top: 20vh;
+    height:60vh;
+    padding-top: 15vh;
     padding-bottom: 1vh;
     margin-left: auto;
     margin-right: auto;
+}
+
+.big.card.one-hundred {
+    font-size: 40vmin;
+    padding-top: 20vh;
+    padding-bottom: 1vh;
 }

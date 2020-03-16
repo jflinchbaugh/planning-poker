@@ -23,7 +23,9 @@
 ;; Views
 
 (defn card [v]
-  [:div.big.card {:on-click #(select-card! nil)}[:span v]])
+  (if (= v "100")
+    [:div.big.card.one-hundred {:on-click #(select-card! nil)} [:span v]]
+    [:div.big.card {:on-click #(select-card! nil)} [:span v]]))
 
 (defn cards [vs]
   [:div.grid
