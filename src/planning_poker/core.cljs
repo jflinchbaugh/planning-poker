@@ -31,7 +31,7 @@
   [:div.grid
    (for [v vs]
      ^{:key v}
-     [:div.small.card {:on-click #(select-card! v)} v])])
+     [:div.small.card {:on-click #(select-card! v)} [:span v]])])
 
 (defn home-page []
   (if @selected

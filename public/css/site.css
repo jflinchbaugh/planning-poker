@@ -8,11 +8,16 @@ body {
   text-align: center;
 }
 
+.app {
+    display: flex;
+    height: 100vh;
+}
+
 .card {
     background-color: lightblue;
     border: solid 1px black;
     border-radius: 20px;
-    margin: 1vmin;
+    position: relative;
 }
 
 .small.card {
@@ -20,22 +25,25 @@ body {
     display: inline-block;
     width: 25vw;
     height: 10vh;
-    padding-top: 4vh;
-    padding-bottom: 1vh;
+    margin: 1vmin;
 }
 
 .big.card {
     font-size: 60vmin;
     width: 90vw;
-    height:60vh;
-    padding-top: 15vh;
-    padding-bottom: 1vh;
-    margin-left: auto;
-    margin-right: auto;
+    height: 90vh;
+    margin: auto;
+    margin-top: 1vmin;
 }
 
 .big.card.one-hundred {
     font-size: 40vmin;
-    padding-top: 20vh;
-    padding-bottom: 1vh;
+}
+
+.card span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
