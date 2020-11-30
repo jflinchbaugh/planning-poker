@@ -52,4 +52,4 @@
                    :dependencies [[binaryage/devtools "1.0.0"]
                                   [figwheel-sidecar "0.5.20"]
                                   [nrepl "0.8.3"]
-                                  [cider/piggieback "0.4.2"]]}})
+                                  [cider/piggieback "0.5.2"]]}})
