@@ -6,7 +6,7 @@
 
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/clojurescript "1.10.773"]
-                 [reagent "1.0.0-rc1"]]
+                 [reagent "1.0.0"]]
 
   :plugins [[lein-cljsbuild "1.1.8"]
             [lein-figwheel "0.5.20"]]
@@ -49,7 +49,7 @@
   :aliases {"package" ["do" "clean" ["cljsbuild" "once" "release"]]}
 
   :profiles {:dev {:source-paths ["src" "env/dev/clj"]
-                   :dependencies [[binaryage/devtools "1.0.0"]
+                   :dependencies [[binaryage/devtools "1.0.2"]
                                   [figwheel-sidecar "0.5.20"]
                                   [nrepl "0.8.3"]
                                   [cider/piggieback "0.5.2"]]}})
