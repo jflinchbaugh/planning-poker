@@ -18,7 +18,6 @@
     (.disable no-sleep))
   (reset! selected v))
 
-
 ;; -------------------------
 ;; Views
 
@@ -35,8 +34,8 @@
 
 (defn home-page []
   (if @selected
-    (card (str @selected))
-    (cards card-values)))
+    [card (str @selected)]
+    [cards card-values]))
 
 ;; -------------------------
 ;; Initialize app
