@@ -24,14 +24,14 @@ body {
     font-size: 10vmin;
     display: inline-block;
     width: 25vw;
-    height: 10vh;
+    height: 15vmin;
     margin: 1vmin;
 }
 
 .big.card {
     font-size: 60vmin;
     width: 90vw;
-    height: 90vh;
+    height: 90vmin;
     margin: auto;
     margin-top: 1vmin;
 }
