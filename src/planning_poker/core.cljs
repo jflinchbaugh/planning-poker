@@ -23,14 +23,14 @@
 
 (defn card [v]
   (if (= v "100")
-    [:div.big.card.one-hundred {:on-click #(select-card! nil)} [:span v]]
-    [:div.big.card {:on-click #(select-card! nil)} [:span v]]))
+    [:button.big.card.one-hundred {:on-click #(select-card! nil)} [:span v]]
+    [:button.big.card {:on-click #(select-card! nil)} [:span v]]))
 
 (defn cards [vs]
   [:div.grid
    (for [v vs]
      ^{:key v}
-     [:div.small.card {:on-click #(select-card! v)} [:span v]])])
+     [:button.small.card {:on-click #(select-card! v)} [:span v]])])
 
 (defn home-page []
   (if @selected
