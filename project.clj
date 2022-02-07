@@ -8,7 +8,8 @@
                  [org.clojure/clojurescript "1.11.4"]
                  [reagent "1.1.0"]
                  [cljsjs/react "18.0.0-rc.0-0"]
-                 [cljsjs/react-dom "18.0.0-rc.0-0"]]
+                 [cljsjs/react-dom "18.0.0-rc.0-0"]
+                 [metosin/reitit "0.5.15"]]
 
   :plugins [[lein-cljsbuild "1.1.8"]
             [lein-figwheel "0.5.20"]]
