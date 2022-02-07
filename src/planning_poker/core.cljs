@@ -50,9 +50,10 @@
        [(-> @match :data :view)]
        [cards (card-series :fib)]))
    [:div
-    [:a {:href (rfe/href ::cards-pow2)} "pow2"]
+    [:a {:href (rfe/href ::cards-fib)} "fib"]
     " "
-    [:a {:href (rfe/href ::cards-fib)} "fib"]]])
+    [:a {:href (rfe/href ::cards-pow2)} "pow2"]
+    ]])
 
 ;; -------------------------
 ;; Routes
