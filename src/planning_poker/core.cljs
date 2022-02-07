@@ -63,7 +63,11 @@
      :view (partial cards (card-series :fib))}]
    ["pow2"
     {:name ::cards-pow2
-     :view (partial cards (card-series :pow2))}]])
+     :view (partial cards (card-series :pow2))}]
+   ["bin2"
+    {:name ::cards-bin2
+     :view (partial cards (card-series :bin2))}]
+   ])
 
 ;; -------------------------
 ;; Initialize app
