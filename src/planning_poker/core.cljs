@@ -11,6 +11,10 @@
 
 (def no-sleep (js/NoSleep.))
 
+(defn allow-sleep! [] (.disable no-sleep))
+
+(defn block-sleep! [] (.enable no-sleep))
+
 (defonce selected (r/atom nil))
 
 (defonce selected-series (r/atom :fib))
@@ -24,8 +28,8 @@
 
 (defn select-card! [v]
   (if v
-    (.enable no-sleep)
-    (.disable no-sleep))
+    (block-sleep!)
+    (allow-sleep!))
   (reset! selected v))
 
 ;; -------------------------
@@ -52,8 +56,7 @@
    [:div
     [:a {:href (rfe/href ::cards-fib)} "fib"]
     " "
-    [:a {:href (rfe/href ::cards-pow2)} "pow2"]
-    ]])
+    [:a {:href (rfe/href ::cards-pow2)} "pow2"]]])
 
 ;; -------------------------
 ;; Routes
