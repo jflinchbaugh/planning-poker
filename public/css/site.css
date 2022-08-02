@@ -4,6 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-user-select: none;
   color: #333;
+  background-color: white;
   width: 98vw;
   text-align: center;
 }
