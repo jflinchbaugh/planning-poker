@@ -21,10 +21,12 @@
 
 (defonce match (r/atom nil))
 
+(def infinity-char (char 0x221E))
+
 (def card-series
-  {:fib (map str [0 (char 0x00BD) 1 2 3 5 8 13 20 40 100 \? (char 0x221E)])
-   :pow2 (map str [0 1 2 4 8 16 32 64 128 256 \? (char 0x221E)])
-   :bin2 (map str [0 1 10 100 1000 10000 \? (char 0x221E)])})
+  {:fib (map str [0 (char 0x00BD) 1 2 3 5 8 13 20 40 100 \? infinity-char])
+   :pow2 (map str [0 1 2 4 8 16 32 64 128 256 \? infinity-char])
+   :bin2 (map str [0 1 10 100 1000 10000 \? infinity-char])})
 
 (defn select-card! [v]
   (if v
